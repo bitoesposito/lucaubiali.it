@@ -12,7 +12,7 @@ Array.from(accordions).forEach((accordion) => {
     // Set styles for all opened items
     if (item.classList.contains("open")) {
       item.querySelector("p").style.maxHeight =
-        item.querySelector("p").scrollHeight + 30 + "px";
+        item.querySelector("p").scrollHeight + 60 + "px";
     }
 
     // Get all titles of accordion items
@@ -33,7 +33,7 @@ Array.from(accordions).forEach((accordion) => {
 
       // Set styles
       if (parent.classList.contains("open")) {
-        textbox.style.maxHeight = textbox.scrollHeight + 30 + "px";
+        textbox.style.maxHeight = textbox.scrollHeight + 60 + "px";
       } else {
         textbox.style.maxHeight = null;
       }

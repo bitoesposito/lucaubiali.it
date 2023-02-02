@@ -83,6 +83,7 @@ p a {
 	padding: 1rem 2rem;
 	border-radius: 8px;
 	text-transform: uppercase;
+	width: 167px;
 }
 
 .main-btn:hover {
@@ -119,6 +120,10 @@ nav {
 	display: flex;
 	align-items: center;
 	gap: 20px;
+}
+
+.nav .main-btn {
+	width: 130px;
 }
 
 /* hero */
@@ -161,18 +166,11 @@ nav {
 	width: 100%;
 }
 
-.main-column {
+.included {
 	display: flex;
-	gap: 50px;
-}
+	gap: 10px;
+	flex-direction: column;
 
-.main-column .column {
-	text-align: left;
-	padding: 0;
-}
-
-.main-column .column:first-of-type img {
-	width: 300px;
 }
 
 /* contents */
@@ -201,6 +199,10 @@ nav {
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+}
+
+.contents .main-btn {
+	display: none;
 }
 
 /* testimonial */
@@ -285,3 +287,114 @@ nav {
   footer img {
 	width: 300px;
   }
+
+  @media screen and (max-width: 480px) {
+
+	.nav {
+		display: none;
+	}
+
+	.nav-container {
+		justify-content: center;
+		text-align: center;
+	}
+
+	.hero {
+		flex-direction: column;
+		padding: 25px;
+		padding: 100px 25px;
+	}
+	
+	.column {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	.column img{
+		width: 100%;
+	}
+
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	.main {
+		flex-direction: column;
+		padding: 25px;
+		padding: 50px 25px; 
+	}
+	
+	.contents {
+		flex-direction: column;
+		padding: 25px;
+		padding: 100px 25px;
+		justify-content: center;
+		text-align: center;
+		gap: 20px;
+	}
+
+	.content-element {
+		flex-direction: column;
+		padding-bottom: 20px;
+		border: 1px solid var(--margin-color);
+		padding: 1rem;
+		border-radius: 8px;
+	}
+
+	.content-element h2 {
+		color: var(--light-color);
+	}
+
+	.content-element img {
+		display: none;
+	}
+
+	.faq {
+		padding: 100px 25px;
+		align-items: center;
+	}
+}
+
+@media screen and (max-width: 950px){
+	.nav {
+		display: none;
+	}
+
+	.nav-container {
+		justify-content: center;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1300px) {
+	.hero {
+		flex-direction: column;
+		padding: 100px;
+		padding: 100px 25px;
+	}
+
+	.column {
+		width: 100%;
+		padding: 0;
+		text-align: center;
+		align-items: center;
+	}
+
+	.column img{
+		width: 100%;
+	}
+
+	.contents {
+		align-items: center;
+	}
+
+	.content-element {
+		flex-direction: column;
+	}
+
+	.content-element img { 
+		object-fit: contain;
+	  }
+}
