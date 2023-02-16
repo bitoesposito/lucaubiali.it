@@ -198,6 +198,10 @@ nav {
 	width: 100%;
 }
 
+video {
+	border-radius: 1rem;
+}
+
 /* main */
 .main {
 	display: block;
